@@ -49,8 +49,8 @@ export const POST = async (request) => {
 
     const roomId = nanoid();
     DB.rooms.push({
-      roomName,
       roomId,
+      roomName,
     });
     //call writeDB after modifying Database
     writeDB();
